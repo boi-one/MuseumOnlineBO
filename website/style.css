@@ -1,3 +1,25 @@
-.div2{
+h1{
+    color: #B4EBFF;
+    background-color: #20296E;
+     
+}
+
+p{
+   
+}
+
+article{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url("img/zee.jpg");
+}
+
+footer{
+    background-color: #3189D6;
+    padding: 5px;
+    color: white;
     
 }
