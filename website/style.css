@@ -1,25 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 h1{
+    margin-bottom: 15px;
+}
+
+header{
     color: #B4EBFF;
     background-color: #20296E;
-     
+    padding: 20px;
+    
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
-p{
-   
-}
 
 article{
+    text-align: center;
     width: 60vw;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     background-image: url("img/zee.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 footer{
     background-color: #3189D6;
-    padding: 5px;
     color: white;
-    
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: #20296E;
+    border-color: #0066ff;
+    font-size: 20px;
+    color: #5890FF;
+    padding: 5px;
+}
+
+.schipimage{
+    display: block;
+    padding-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.infomuseum{
+    background-color: blue;
+    opacity: 0.4;
+    padding: 100px;
 }
