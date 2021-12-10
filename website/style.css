@@ -19,7 +19,6 @@ header{
 
 article{
     text-align: center;
-    width: 60vw;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 1200px;
@@ -59,7 +58,8 @@ button{
 }
 
 .infomuseum{
-    background-color: blue;
-    opacity: 0.4;
+    background-color: rgba(18, 114, 161, 0.58);
+    color: #1EF9FF;
     padding: 100px;
+    margin-top: -50px;
 }
