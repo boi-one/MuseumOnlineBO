@@ -47,6 +47,7 @@ button{
     font-size: 20px;
     color: #5890FF;
     padding: 5px;
+
 }
 
 .schipimage{
@@ -62,4 +63,8 @@ button{
     color: #1EF9FF;
     padding: 100px;
     margin-top: -50px;
+}
+
+button:hover {
+    cursor: pointer;
 }
