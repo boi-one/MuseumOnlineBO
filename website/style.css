@@ -9,7 +9,6 @@ html{
 }
 
 p{
-    padding: 20px;
     border: 2px;
     border-color: blue;
 }
@@ -65,10 +64,9 @@ a{
 
 .schipimage{
     display: block;
-    padding-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: 50px;
 }
 
 .tijden{
@@ -92,7 +90,10 @@ a{
 .infomuseum{
     background-color: rgba(18, 114, 161, 0.58);
     color: #1EF9FF;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom:30px;
 }
 .text{
     max-width: 700px;
