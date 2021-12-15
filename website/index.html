@@ -13,15 +13,9 @@
     <button>
         Home
     </button>
-    <button>
-        Contact
-    </button>
-    <button onclick="location.href='https://tickets.hetscheepvaartmuseum.nl/nl/tickets'" type="button">
-        Ticket
-    </button>
-    <button onclick="location.href='https://www.hetscheepvaartmuseum.nl/bezoek/openingstijden'" type="button">
-        Tijden
-    </button>
+    <a class="buttons" href="#contact">Contact</a>
+    <a class="buttons" href="#prijzen">Tickets</a>
+    <a class="buttons" href="#tijden">Tijden</a>
    </header> 
    <article>
        <p class="infomuseum">
@@ -31,9 +25,11 @@
         Het is gespecialiseerd in de maritieme geschiedenis van Nederland. 
        </p>
        <img class="schipimage" src="img/deez.jpg" alt="een boot">
+       <p id="tijden">tijden 10.00 uur</p>
+       <p id="prijzen">prijzen 21 euro</p>
    </article>
    <footer>
-       <h3>
+       <h3 id="contact">
            Contact
        </h3>
        <p>

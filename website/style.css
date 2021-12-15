@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    padding: 20px;
+    border: 2px;
+    border-color: blue;
+}
+
 h1{
     margin-bottom: 15px;
 }
@@ -41,12 +51,14 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-    background-color: #20296E;
+a{
+    background-color: #000261;
     border-color: #0066ff;
+    border-radius: 5px;
     font-size: 20px;
     color: #5890FF;
     padding: 5px;
+    text-decoration: none;
 
 }
 
@@ -56,6 +68,24 @@ button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.tijden{
+    width: 80px;
+    height: 80px;
+    background:#222831;
+    border: none;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom:120px;
+    right:120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .infomuseum{
