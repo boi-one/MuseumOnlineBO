@@ -25,15 +25,14 @@
             Het is gespecialiseerd in de maritieme geschiedenis van Nederland. 
            </p>
        </section>
-       <img class="schipimage" src="img/tentoonstelling1.jpg" alt="tentoonstellingen">
+       <img class="ArrowLeft" onClick="PreviousImage()" src="img/Arrow.png">
 
-       <button onclick="changeImage(0)">0</button>
-        <button onClick="changeImage(1)">1</button>
-        <button onclick="changeImage(2)">2</button>
-        <button onclick="changeImage(3)">3</button>
-        <button onclick="changeImage(4)">4</button>
-        <button onclick="changeImage(5)">5</button>
+       <img  id="myImagePrev" class="schipimageprev" src="img/tentoonstelling3.jpg" alt="tentoonstellingen">
+       <img  id="myImage" class="schipimage" src="img/tentoonstelling0.jpg" alt="tentoonstellingen">
+       <img  id="myImageNext" class="schipimagenext" src="img/tentoonstelling1.jpg" alt="tentoonstellingen">
 
+       <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png">
+        
        <section class="infotentoon">
             <h2 class="tentoontitel">De scheepsornamenten</h2>
             <h2 class="tentoontitel">Het verhaal van de walvis</h2>
@@ -71,6 +70,7 @@
             <h2 class="titel">Vakantie tijden</h2>
             <p class="infotext">Maandag T/M Vrijdag: 10.00-17.00</p>
        </section>
+       <section id="prijzen"></section>
        <section class="tijdenprijzen">
         <h2 class="titel">prijzen</h2>
          <section class="infotext">

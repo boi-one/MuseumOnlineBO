@@ -19,6 +19,7 @@ header{
     width: 100%;
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 999;
 }
 
 
@@ -58,13 +59,58 @@ a{
 }
 
 .schipimage{
+    float: left;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 50px;
     border-radius: 10px;
-    width: 560px;
-    height: 402px;
+    width: 300px;
+    height: 220px;
+}
+.schipimagenext{
+    float: left;
+    display: block;
+    margin-left: 2px;
+    margin-right: 0%;
+    margin-top: 65px;
+    border-radius: 10px;
+    width: 250px;
+    height: 190px;
+    opacity: 88%;
+}
+
+.schipimageprev{
+    float: left;
+    display: block;
+    margin-left: 0%;
+    margin-right: 2px;
+    margin-top: 65px;
+    border-radius: 10px;
+    width: 250px;
+    height: 190px;
+    opacity: 88%;
+}
+
+.ArrowLeft{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-top: 75px;
+    rotate: -90deg;
+    margin-left: 15%;
+}
+.ArrowLeft:hover{
+    cursor: pointer;
+}
+
+.ArrowRight{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-top: 75px;
+    rotate: 90deg;
+}
+.ArrowRight:hover{
+    cursor: pointer;
 }
 
 .button{
@@ -110,7 +156,7 @@ a{
 }
 
 .infotentoon{
-    margin-top: 80px;
+    margin-top: 425px;
     padding-top: 50px;
     padding-bottom: 400px;
     color: #91C0FF;

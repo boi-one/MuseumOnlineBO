@@ -1,8 +1,51 @@
 const myImage = document.getElementById('myImage');
+const myImagePrev = document.getElementById('myImagePrev');
+const myImageNext = document.getElementById('myImageNext');
 
-let paintings = ["img/tentoonstelling1.jpg", "img/tentoonstelling2.jpg", "img/tentoonstelling3.jpg", "img/tentoonstelling4.jpg"]
+var image = 0;
 
-function changeImage(index){
-    myImage.src = tentoonstelling[index];
+function DisplayNext(image)
+{
+    image = image + 1;
+    if (image > 3)
+    {
+        image = 0
+    }
+    myImageNext.src = "img/tentoonstelling"+ image +".jpg";
+}
+
+function DisplayPrev(image)
+{
+    image = image -1;
+    if (image < 0)
+    {
+        image = 3
+    }
+    myImagePrev.src = "img/tentoonstelling"+ image +".jpg";
+}
+
+function NextImage(){
+    image = image + 1;
+    if (image > 3)
+    {
+        image = 0
+    }
+    myImage.src = "img/tentoonstelling"+ image +".jpg";
     
+    console.log(image);
+    DisplayNext(image);
+    DisplayPrev(image);
+}
+
+function PreviousImage(){
+    image = image - 1;
+    if (image < 0)
+    {
+        image = 3
+    }
+    myImage.src = "img/tentoonstelling"+ image +".jpg";
+    
+    console.log(image);
+    DisplayNext(image);
+    DisplayPrev(image);
 }
