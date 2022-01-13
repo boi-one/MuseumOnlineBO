@@ -240,3 +240,11 @@ a{
 button:hover {
     cursor: pointer;
 }
+
+#map{
+    margin-bottom: 20px;
+}
+
+#mapplek{
+    margin-bottom: 120px ;
+}
