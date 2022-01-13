@@ -26,7 +26,7 @@ function DisplayPrev(image)
 
 function NextImage(){
     image = image + 1;
-    if (image > 3)z
+    if (image > 3)
     {
         image = 0
     }
