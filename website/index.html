@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,7 @@
     
    </header> 
    <article>
+       <h6>a</h6>
        <section class="infomuseum">
            <h2 id="geschiedenisTitel" class="titel">Museum Geschiedenis</h2>
             <p id="Geschiedenis" class="text">
@@ -30,13 +31,13 @@
             Het is gespecialiseerd in de maritieme geschiedenis van Nederland. 
            </p>
        </section>
-       <img class="ArrowLeft" onClick="PreviousImage()" src="img/Arrow.png">
+       <img class="ArrowLeft" onClick="PreviousImage()" src="img/Arrow.png" alt="arrowleft">
 
        <img  id="myImagePrev" class="schipimageprev" src="img/tentoonstelling3.jpg" alt="tentoonstellingen">
        <img  id="myImage" class="schipimage" src="img/tentoonstelling0.jpg" alt="tentoonstellingen">
        <img  id="myImageNext" class="schipimagenext" src="img/tentoonstelling1.jpg" alt="tentoonstellingen">
 
-       <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png">
+       <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png" alt="arrowright">
         
        <section class="infotentoon">
             <h2 id="tentoonTitel1" class="tentoontitel">De scheepsornamenten</h2>
@@ -68,10 +69,12 @@
            <p class="review">Review</p>
            <p class="review">Review</p>
        </section>
-       <section id="tijden"></section>
+       <section id="tijden">
+           <h6>e</h6>
+        </section>
        <section class="tijdenprijzen" >
            <h2 id="Titel1" class="titel">Tijden</h2>
-            <section class="infotext">
+            <div class="infotext">
                 <p id="Tijden">
                     Maandag: dicht <br>
                     Dinsdag: 10.00-17.00 <br>
@@ -81,14 +84,16 @@
                     Zaterdag: 10.00-17.00 <br>
                     Zondag: 10.00-17.00
                 </p>
-            </section>
+            </div>
             <h2 id="Titel2" class="titel">Vakantie tijden</h2>
             <p id="Vakanties" class="infotext">Maandag T/M Vrijdag: 10.00-17.00</p>
        </section>
-       <section id="prijzen"></section>
+       <section id="prijzen">
+           <h6>a</h6>
+       </section>
        <section class="tijdenprijzen">
         <h2 id="Titel3" class="titel">Prijzen</h2>
-         <section class="infotext">
+         <div class="infotext">
              <p id="Prijzen">
                 Kind 0 T/M 3: €0,00 <br>
                 Kind 4 T/M 17: €8,00 <br>
@@ -97,40 +102,12 @@
                 Museum kaart: €0,00 <br>
                 Stadspas: €0,00
             </p>
-         </section>
+        </div>
        </section>
    </article>
    <section id="mapplek">
+        <h6>a</h6>
    </section>
-<article id="map">
-   <div class = "my-map">
-    <iframe width="725" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.913216829299928%2C52.37114019773921%2C4.915727376937867%2C52.37227668241375&amp;layer=mapnik&amp;marker=52.37170844373179%2C4.9144721031188965" style="border: 1px solid black">
-    </iframe>
-    <br/>
-        <small>
-            <a href="https://www.openstreetmap.org/?mlat=52.37171&amp;mlon=4.91447#map=19/52.37171/4.91447">
-                Bekijk op Open Street Maps
-            </a>
-        </small>
-    </div>
-<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<script>
-    // Creating map options
-    var mapOptions = {
-    center: [17.385044, 78.486671],
-    zoom: 10
-    }
-    
-    // Creating a map object
-    var map = new L.map('map', mapOptions);
-    
-    // Creating a Layer object
-    var layer = new     L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-    
-    // Adding layer to the map
-    map.addLayer(layer);
-    </script>
-</article>
    <footer>
        <h3 id="contact">
            Contact
