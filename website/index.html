@@ -11,9 +11,11 @@
    <header>
     <h1 id="headerTitel">SCHEEPVAART MUSEUM AMSTERDAM</h1>
     <a id="Button1" class="buttons" href="#top">Home</a>
-    <a id="Button2" class="buttons" href="#prijzen">Prijzen</a>
     <a id="Button3" class="buttons" href="#tijden">Tijden</a>
+    <a id="Button2" class="buttons" href="#prijzen">Prijzen</a>
+    <a class="buttons" href="#mapplek">Route</a>
     <a id="Button4" class="buttons" href="#contact">Contact</a>
+    
     <div onclick="ChangeEN()" id="EN">🇬🇧 EN</div>
     <div onclick="ChangeNL()" id="NL">🇳🇱 NL</div>
     
@@ -98,6 +100,37 @@
          </section>
        </section>
    </article>
+   <section id="mapplek">
+   </section>
+<article id="map">
+   <div class = "my-map">
+    <iframe width="725" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.913216829299928%2C52.37114019773921%2C4.915727376937867%2C52.37227668241375&amp;layer=mapnik&amp;marker=52.37170844373179%2C4.9144721031188965" style="border: 1px solid black">
+    </iframe>
+    <br/>
+        <small>
+            <a href="https://www.openstreetmap.org/?mlat=52.37171&amp;mlon=4.91447#map=19/52.37171/4.91447">
+                Bekijk op Open Street Maps
+            </a>
+        </small>
+    </div>
+<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script>
+    // Creating map options
+    var mapOptions = {
+    center: [17.385044, 78.486671],
+    zoom: 10
+    }
+    
+    // Creating a map object
+    var map = new L.map('map', mapOptions);
+    
+    // Creating a Layer object
+    var layer = new     L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    
+    // Adding layer to the map
+    map.addLayer(layer);
+    </script>
+</article>
    <footer>
        <h3 id="contact">
            Contact
@@ -109,5 +142,6 @@
        </p>
    </footer>
    <script src="script.js"></script>
+
 </body>
 </html>
