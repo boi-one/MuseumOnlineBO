@@ -26,7 +26,7 @@ function DisplayPrev(image)
 
 function NextImage(){
     image = image + 1;
-    if (image > 3)
+    if (image > 3)z
     {
         image = 0
     }
@@ -95,7 +95,7 @@ function ChangeNL(){
     Titel2.innerHTML = "Vakantie tijden";
     Vakanties.innerHTML = "Maandag T/M Vrijdag: 10.00-17.00";
     Titel3.innerHTML = "Prijzen";
-    Prijzen.innerHTML = "Kind 0 T/M 3: €0,00 <br> Kind 4 T/M 17: €8,00 <br> Volwassenen: €16,50 <br> Student: €8,00 <br> useum kaart: €0,00 <br> Stadspas: €0,00";
+    Prijzen.innerHTML = "Kind 0 T/M 3: €0,00 <br> Kind 4 T/M 17: €8,00 <br> Volwassenen: €16,50 <br> Student: €8,00 <br> Museum kaart: €0,00 <br> Stadspas: €0,00";
     contact.innerHTML = "Contact";
     ContactInfo.innerHTML = "Telefoonnummer: 020 523 2222 <br> Email: info@hetscheepvaartmuseum.nl <br> Adres: Kattenburgerplein 1 1018 KK Amsterdam ";
 }
@@ -121,7 +121,7 @@ function ChangeEN(){
     Titel2.innerHTML = "Holiday Opening hours";
     Vakanties.innerHTML = "Monday to Friday: 10.00-17.00";
     Titel3.innerHTML = "Prices";
-    Prijzen.innerHTML = "Child 0 to 3: €0.00 <br> Child 4 to 17: €8.00 <br> Adults: €16.50 <br> Student: €8.00 <br> useum card: € 0.00 <br> City pass: €0.00";
+    Prijzen.innerHTML = "Child 0 to 3: €0.00 <br> Child 4 to 17: €8.00 <br> Adults: €16.50 <br> Student: €8.00 <br> Museum card: € 0.00 <br> City pass: €0.00";
     contact.innerHTML = "Contact";
     ContactInfo.innerHTML = "Phone number: 020 523 2222 <br> Email: info@hetscheepvaartmuseum.nl <br> Address: Kattenburgerplein 1 1018 KK Amsterdam";
 }
