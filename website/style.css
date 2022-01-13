@@ -28,6 +28,7 @@ header{
     padding: 10px 10px 10px 10px;
     background-color: rgb(227, 245, 250);
     color: rgb(34, 34, 148);
+    font-family: 'Lato', sans-serif;
 }
 #EN:hover{
     cursor: pointer;
@@ -38,6 +39,7 @@ header{
     padding: 10px 10px 10px 10px;
     background-color: rgb(227, 245, 250);
     color: rgb(34, 34, 148);
+    font-family: 'Lato', sans-serif;
 }
 #NL:hover{
     cursor: pointer;
@@ -50,6 +52,7 @@ article{
     padding-top: 50px;
     padding-bottom: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -65,7 +68,7 @@ footer{
     padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 a{
@@ -140,7 +143,7 @@ a{
     background:#222831;
     border: none;
     font-size: 150%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     border-radius: 5px;
     color: white;
     position: fixed;
@@ -150,6 +153,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .tijdenprijzen{
@@ -158,6 +162,7 @@ a{
     padding-bottom: 50px;
     background-color: rgba(18, 114, 161, 0.77);
     color: #91C0FF;
+    font-family: 'Lato', sans-serif;
 }
 
 .infotext{
@@ -165,6 +170,7 @@ a{
     text-align: left;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 .infomuseum{
@@ -174,6 +180,7 @@ a{
     padding-right: 100px;
     padding-top: 100px;
     padding-bottom:30px;
+    font-family: 'Lato', sans-serif;
 }
 
 .infotentoon{
@@ -181,11 +188,11 @@ a{
     padding-top: 50px;
     padding-bottom: 50px;
     color: #91C0FF;
-    background-color: rgba(18, 114, 161, 0.77);;
+    background-color: rgba(18, 114, 161, 0.77);
+    font-family: 'Lato', sans-serif;
 }
 .tentoontitel{
-    width: 25%;
-    margin-left: 38%;
+    font-family: 'Lato', sans-serif;
 }
 .tentoontext{
     text-align: left;
@@ -195,6 +202,7 @@ a{
     padding-left: 4%;
     padding-top: 1px;
     margin-left: 38%;
+    font-family: 'Lato', sans-serif;
 }
 
 .reviews{
@@ -202,7 +210,8 @@ a{
     padding-top: 50px;
     padding-bottom: 400px;
     color: #91C0FF;
-    background-color: rgba(18, 114, 161, 0.77);;
+    background-color: rgba(18, 114, 161, 0.77);
+    font-family: 'Lato', sans-serif;
 }
 .review{
     color: #222831;
@@ -219,12 +228,14 @@ a{
     margin-right: 2%;
     padding-top: 1px;
     height: 300px;
+    font-family: 'Lato', sans-serif;
 }
 
 .text{
     max-width: 700px;
     margin: 0 auto;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 .titel{
     margin-bottom: 10px;
@@ -237,15 +248,6 @@ a{
 button:hover {
     cursor: pointer;
 }
-
-#map{
-    margin-bottom: 20px;
-}
-
-#mapplek{
-    margin-bottom: 120px ;
-}
-
 h6{
     color:rgba(255, 1, 1, 0);
 }
