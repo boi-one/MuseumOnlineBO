@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,17 @@
    <header>
     <h1 id="headerTitel">SCHEEPVAART MUSEUM AMSTERDAM</h1>
     <a id="Button1" class="buttons" href="#top">Home</a>
-    <a id="Button2" class="buttons" href="#prijzen">Prijzen</a>
     <a id="Button3" class="buttons" href="#tijden">Tijden</a>
+    <a id="Button2" class="buttons" href="#prijzen">Prijzen</a>
+    <a class="buttons" href="#mapplek">Route</a>
     <a id="Button4" class="buttons" href="#contact">Contact</a>
-    <div id="EN">🇬🇧 EN</div>
-    <div id="NL">🇳🇱 NL</div>
+    
+    <div onclick="ChangeEN()" id="EN">🇬🇧 EN</div>
+    <div onclick="ChangeNL()" id="NL">🇳🇱 NL</div>
     
    </header> 
    <article>
+       <h6>a</h6>
        <section class="infomuseum">
            <h2 id="geschiedenisTitel" class="titel">Museum Geschiedenis</h2>
             <p id="Geschiedenis" class="text">
@@ -28,27 +31,21 @@
             Het is gespecialiseerd in de maritieme geschiedenis van Nederland. 
            </p>
        </section>
-       <img class="ArrowLeft" onClick="PreviousImage()" src="img/Arrow.png">
+       <img class="ArrowLeft" onClick="PreviousImage()" src="img/Arrow.png" alt="arrowleft">
 
        <img  id="myImagePrev" class="schipimageprev" src="img/tentoonstelling3.jpg" alt="tentoonstellingen">
        <img  id="myImage" class="schipimage" src="img/tentoonstelling0.jpg" alt="tentoonstellingen">
        <img  id="myImageNext" class="schipimagenext" src="img/tentoonstelling1.jpg" alt="tentoonstellingen">
 
-       <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png">
+       <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png" alt="arrowright">
         
        <section class="infotentoon">
             <h2 id="tentoonTitel" class="tentoontitel">De scheepsornamenten</h2>
-            <h2 id="tentoonTitel2" class="tentoontitel">Het verhaal van de walvis</h2>
-            <h2 id="tentoonTitel3" class="tentoontitel">Willem van de Velde & zoon</h2>
-            <h2 id="tentoonTitel4" class="tentoontitel">De jachtmodellen</h2>
-            <p id="tentoonText1" class="tentoontext">Het versieren van schepen is van alle tijden en nationaliteiten. Grieken, Romeinen, Vikingen en Hollanders: allemaal versierden ze hun schepen met schilderingen, houtsnijwerk en beelden die bol stonden van de symboliek. 
-                Het versterkte de identiteit en afkomst van een schip en haar bemanning. Ook nu nog wemelt het op het water van de gekleurde roerklikken, roerkoppen, mastschilden, mastwortels en stevenversieringen. Op aken die momenteel over ons IJsselmeer varen, tref je bijvoorbeeld vaak een liggende leeuw op de helmstok van het schip.</p>
-            <p id="tentoonText2" class="tentoontext">In de 16e eeuw wisten mensen nog maar weinig van walvissen. Ze vonden het vooral griezelige zeemonsters. Toen de Nederlandse zeeman Willem Barentsz op ontdekkingstocht ging naar de Noordelijke IJszee veranderde het beeld van de walvis. 
-                In de Noordelijke IJszee wemelde het van de walvissen en het viel Willem op hoe makkelijk ze zich lieten vangen. Steeds meer mensen gingen op walvisjacht, omdat je met de vangst van een walvis veel geld kon verdienen. Het vlees, de olie uit het spek en de baleinen van de walvis brachten op de markt veel geld op.</p>
-            <p id="tentoonText3" class="tentoontext">De overzichtstentoonstelling Willem van de Velde & Zoon neemt je mee in de maritieme wereld van de Van de Veldes, het 'oorlogscorrespondentschap' van vader Willem en voert je langs ruwe schetsen, kalme zeegezichten, dramatische stormen en monumentale zeeslagen. Het is de eerste keer wereldwijd dat er zoveel werken van beide kunstenaars tegelijkertijd te zien zijn.</p>
-            <p id="tentoonText4" class="tentoontext">De jachtmodellen zijn zeer divers en bestaan onder andere uit: spiegeljachten, paviljoenjachten, boeiers, tjotters en hekjachten…deze scheepsmodellen zijn net zo kunstig gemaakt als het origineel. Zelfs de versiering van de modellen is net zo rijk als de originele jachten.
-                In de modellen is grote aandacht voor detail. Je zal dan ook de neiging krijgen je neus tegen het glas van de vitrine te duwen om elk klein detail te komen bewonderen!
-                De tentoonstelling geeft een mooie overview van jachtmodellen door de jaren heen.</p>
+            <p id="tentoonText" class="tentoontext">
+                Het versieren van schepen is van alle tijden en nationaliteiten. Grieken, Romeinen, Vikingen en Hollanders: allemaal versierden ze hun schepen met schilderingen, houtsnijwerk en beelden die bol stonden van de symboliek. 
+                Het versterkte de identiteit en afkomst van een schip en haar bemanning. Ook nu nog wemelt het op het water van de gekleurde roerklikken, roerkoppen, mastschilden, mastwortels en stevenversieringen. Op aken die momenteel over ons IJsselmeer varen, tref je bijvoorbeeld vaak een liggende leeuw op de helmstok van het schip.
+            </p>
+            </p>
        </section>
        <section class="reviews">
            <h2 class="titel">Reviews</h2>
@@ -58,10 +55,12 @@
            <p class="review">Review</p>
            <p class="review">Review</p>
        </section>
-       <section id="tijden"></section>
+       <section id="tijden">
+           <h6>e</h6>
+        </section>
        <section class="tijdenprijzen" >
            <h2 id="Titel1" class="titel">Tijden</h2>
-            <section class="infotext">
+            <div class="infotext">
                 <p id="Tijden">
                     Maandag: dicht <br>
                     Dinsdag: 10.00-17.00 <br>
@@ -71,44 +70,41 @@
                     Zaterdag: 10.00-17.00 <br>
                     Zondag: 10.00-17.00
                 </p>
-            </section>
+            </div>
             <h2 id="Titel2" class="titel">Vakantie tijden</h2>
             <p id="Vakanties" class="infotext">Maandag T/M Vrijdag: 10.00-17.00</p>
        </section>
-       <section id="prijzen"></section>
+       <section id="prijzen">
+           <h6>a</h6>
+       </section>
        <section class="tijdenprijzen">
-        <h2 id="Titel3" class="titel">prijzen</h2>
-         <section class="infotext">
+        <h2 id="Titel3" class="titel">Prijzen</h2>
+         <div class="infotext">
              <p id="Prijzen">
                 Kind 0 T/M 3: €0,00 <br>
                 Kind 4 T/M 17: €8,00 <br>
                 Volwassenen: €16,50 <br>
                 Student: €8,00 <br>
-                useum kaart: €0,00 <br>
+                Museum kaart: €0,00 <br>
                 Stadspas: €0,00
             </p>
-         </section>
+        </div>
        </section>
    </article>
-   <script src="script.js"></script>
+   <section id="mapplek">
+        <h6>a</h6>
+   </section>
    <footer>
        <h3 id="contact">
            Contact
        </h3>
-       <p id="xontactInfo">
+       <p id="ContactInfo">
             Telefoonnummer: 020 523 2222 <br>
             Email: info@hetscheepvaartmuseum.nl <br>
             Adres: Kattenburgerplein 1 1018 KK Amsterdam 
        </p>
-       <p id="Nummer" class="contactinfo">
-            Telefoonnummer: 020 523 2222 
-       </p>
-       <p id="Mail" class="contactinfo">
-            Email: info@hetscheepvaartmuseum.nl  
-        </p>
-        <p id="Adres" class="contactinfo">
-            Adres: Kattenburgerplein 1 1018 KK Amsterdam
-        </p>
    </footer>
-    </body>
+   <script src="script.js"></script>
+
+</body>
 </html>

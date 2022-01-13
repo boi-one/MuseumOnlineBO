@@ -177,27 +177,24 @@ a{
 }
 
 .infotentoon{
-    margin-top: 425px;
+    margin-top: 400px;
     padding-top: 50px;
-    padding-bottom: 400px;
+    padding-bottom: 50px;
     color: #91C0FF;
     background-color: rgba(18, 114, 161, 0.77);;
 }
 .tentoontitel{
-    float: left;
     width: 25%;
-    padding-right: 3%;
-    padding-left: 3%;
+    margin-left: 38%;
 }
 .tentoontext{
     text-align: left;
     margin-top: 15px;
-    height: 225px;
-    float: left;
     width: 25%;
     padding-right: 4%;
     padding-left: 4%;
     padding-top: 1px;
+    margin-left: 38%;
 }
 
 .reviews{
@@ -247,4 +244,8 @@ button:hover {
 
 #mapplek{
     margin-bottom: 120px ;
+}
+
+h6{
+    color:rgba(255, 1, 1, 0);
 }
