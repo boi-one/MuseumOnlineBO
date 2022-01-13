@@ -21,6 +21,26 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     z-index: 999;
 }
+#EN{
+    float: right;
+    border-left: solid rgb(111, 190, 226);
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(227, 245, 250);
+    color: rgb(34, 34, 148);
+}
+#EN:hover{
+    cursor: pointer;
+}
+
+#NL{
+    float: right;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(227, 245, 250);
+    color: rgb(34, 34, 148);
+}
+#NL:hover{
+    cursor: pointer;
+}
 
 
 article{
@@ -96,7 +116,7 @@ a{
     height: 160px;
     margin-top: 75px;
     rotate: -90deg;
-    margin-left: 15%;
+    margin-left: 20vw;
 }
 .ArrowLeft:hover{
     cursor: pointer;
