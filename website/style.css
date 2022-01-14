@@ -10,6 +10,7 @@ html{
 
 h1{
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
 header{
@@ -241,7 +242,7 @@ h6{
     color:rgba(255, 1, 1, 0);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
     .schipimageprev, .schipimagenext, .ArrowLeft, .ArrowRight {
         display:none;
@@ -254,5 +255,8 @@ h6{
     }
     .schipimage{
         margin-left: 25%;
+    }
+    h1{
+        font-size: 25px;
     }
 }

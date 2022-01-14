@@ -132,6 +132,7 @@ const ContactInfo = document.getElementById("ContactInfo")
 
 function ChangeNL(){
     headerTitel.innerHTML = "SCHEEPVAART MUSEUM AMSTERDAM";
+    headerTitel.style.fontSize = "25px";
     Button1.innerHTML = "Home";
     Button2.innerHTML = "Prijzen";
     Button3.innerHTML = "Tijden";
@@ -152,6 +153,7 @@ function ChangeNL(){
 
 function ChangeEN(){
     headerTitel.innerHTML = "NATIONAL MARITIME MUSEUM OF AMSTERDAM";
+    headerTitel.style.fontSize = "22px";
     Button1.innerHTML = "Home";
     Button2.innerHTML = "Prices";
     Button3.innerHTML = "Opening Hours";
