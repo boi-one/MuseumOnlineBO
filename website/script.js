@@ -1,6 +1,7 @@
 const myImage = document.getElementById('myImage');
 const myImagePrev = document.getElementById('myImagePrev');
 const myImageNext = document.getElementById('myImageNext');
+
 const tentoonTitel = document.getElementById("tentoonTitel")
 const tentoonText = document.getElementById("tentoonText")
 
@@ -146,7 +147,7 @@ function ChangeNL(){
     contact.innerHTML = "Contact";
     ContactInfo.innerHTML = "Telefoonnummer: 020 523 2222 <br> Email: info@hetscheepvaartmuseum.nl <br> Adres: Kattenburgerplein 1 1018 KK Amsterdam ";
     taal = "Nederlands";
-    changeText(image);
+    changeText();
 }
 
 function ChangeEN(){
@@ -166,5 +167,5 @@ function ChangeEN(){
     contact.innerHTML = "Contact";
     ContactInfo.innerHTML = "Phone number: 020 523 2222 <br> Email: info@hetscheepvaartmuseum.nl <br> Address: Kattenburgerplein 1 1018 KK Amsterdam";
     taal = "Engels";
-    changeText(image);
+    changeText();
 }

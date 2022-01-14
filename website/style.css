@@ -164,15 +164,6 @@ a{
     color: #91C0FF;
     font-family: 'Lato', sans-serif;
 }
-
-.infotext{
-    padding-left: 45%;
-    text-align: left;
-    margin-bottom: 25px;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-}
-
 .infomuseum{
     background-color: rgba(18, 114, 161, 0.77);
     color: #91C0FF;
@@ -191,18 +182,8 @@ a{
     background-color: rgba(18, 114, 161, 0.77);
     font-family: 'Lato', sans-serif;
 }
-.tentoontitel{
-    font-family: 'Lato', sans-serif;
-}
-.tentoontext{
+#tentoonText{
     text-align: left;
-    margin-top: 15px;
-    width: 25%;
-    padding-right: 4%;
-    padding-left: 4%;
-    padding-top: 1px;
-    margin-left: 38%;
-    font-family: 'Lato', sans-serif;
 }
 
 .reviews{
@@ -230,6 +211,14 @@ a{
     height: 300px;
     font-family: 'Lato', sans-serif;
 }
+.Tour{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(18, 114, 161, 0.77);
+    color: #91C0FF;
+    font-family: 'Lato', sans-serif;
+}
 
 .text{
     max-width: 700px;
@@ -250,4 +239,20 @@ button:hover {
 }
 h6{
     color:rgba(255, 1, 1, 0);
+}
+
+@media screen and (max-width: 480px) {
+
+    .schipimageprev, .schipimagenext, .ArrowLeft, .ArrowRight {
+        display:none;
+    }
+    .taalKnop{
+        margin-top: 15px;
+    }
+    #tentoonText{
+        width: 300px;
+    }
+    .schipimage{
+        margin-left: 25%;
+    }
 }

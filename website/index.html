@@ -16,11 +16,11 @@
     <a id="Button1" class="buttons" href="#top">Home</a>
     <a id="Button3" class="buttons" href="#tijden">Tijden</a>
     <a id="Button2" class="buttons" href="#prijzen">Prijzen</a>
-    <a class="buttons" href="#mapplek">Route</a>
+    <a class="buttons" href="#onlineTour">Online Tour</a>
     <a id="Button4" class="buttons" href="#contact">Contact</a>
     
-    <div onclick="ChangeEN()" id="EN">🇬🇧 EN</div>
-    <div onclick="ChangeNL()" id="NL">🇳🇱 NL</div>
+    <div class="taalKnop" onclick="ChangeEN()" id="EN">🇬🇧 EN</div>
+    <div class="taalKnop" onclick="ChangeNL()" id="NL">🇳🇱 NL</div>
     
    </header> 
    <article>
@@ -43,8 +43,8 @@
        <img class="ArrowRight" onclick="NextImage()" src="img/Arrow.png" alt="arrowright">
         
        <section class="infotentoon">
-            <h2 id="tentoonTitel" class="tentoontitel">De scheepsornamenten</h2>
-            <p id="tentoonText" class="tentoontext">
+            <h2 id="tentoonTitel" class="titel">De scheepsornamenten</h2>
+            <p id="tentoonText" class="text">
                 Het versieren van schepen is van alle tijden en nationaliteiten. Grieken, Romeinen, Vikingen en Hollanders: allemaal versierden ze hun schepen met schilderingen, houtsnijwerk en beelden die bol stonden van de symboliek. 
                 Het versterkte de identiteit en afkomst van een schip en haar bemanning. Ook nu nog wemelt het op het water van de gekleurde roerklikken, roerkoppen, mastschilden, mastwortels en stevenversieringen. Op aken die momenteel over ons IJsselmeer varen, tref je bijvoorbeeld vaak een liggende leeuw op de helmstok van het schip.
             </p>
@@ -63,7 +63,7 @@
         </section>
        <section class="tijdenprijzen" >
            <h2 id="Titel1" class="titel">Tijden</h2>
-            <div class="infotext">
+            <div class="text">
                 <p id="Tijden">
                     Maandag: dicht <br>
                     Dinsdag: 10.00-17.00 <br>
@@ -75,14 +75,14 @@
                 </p>
             </div>
             <h2 id="Titel2" class="titel">Vakantie tijden</h2>
-            <p id="Vakanties" class="infotext">Maandag T/M Vrijdag: 10.00-17.00</p>
+            <p id="Vakanties" class="text">Maandag T/M Vrijdag: 10.00-17.00</p>
        </section>
        <section id="prijzen">
            <h6>a</h6>
        </section>
        <section class="tijdenprijzen">
         <h2 id="Titel3" class="titel">Prijzen</h2>
-         <div class="infotext">
+         <div class="text">
              <p id="Prijzen">
                 Kind 0 T/M 3: €0,00 <br>
                 Kind 4 T/M 17: €8,00 <br>
@@ -93,10 +93,14 @@
             </p>
         </div>
        </section>
-   </article>
-   <section id="mapplek">
+    <section id="onlineTour">
         <h6>a</h6>
    </section>
+   <section class="Tour">
+        <h2 class="titel">Online Tour</h2>
+        <img src="img/deez.jpg" alt="Placeholder image online tour">
+   </section>
+   </article>
    <footer>
        <h3 id="contact">
            Contact
