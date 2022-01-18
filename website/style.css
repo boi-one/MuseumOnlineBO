@@ -176,12 +176,17 @@ a{
 }
 
 .infotentoon{
-    margin-top: 400px;
+    margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #91C0FF;
     background-color: rgba(18, 114, 161, 0.77);
     font-family: 'Lato', sans-serif;
+}
+.slider{
+    
+    display: flex;
+    justify-content: center;
 }
 #tentoonText{
     text-align: left;
@@ -221,11 +226,11 @@ a{
     font-family: 'Lato', sans-serif;
 }
 .Tourjs{
-    width: 85vw;
+    width: 40vw;
 }
 
 .map{
-    width: 80vw;
+    width: 40vw;
 }
 .ontzichtbareknop{
     color: rgba(255, 1, 1, 0);
@@ -236,6 +241,8 @@ a{
     max-width: 700px;
     margin: 0 auto;
     font-size: 20px;
+    text-align: left;
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 .titel{
@@ -380,5 +387,11 @@ h6{
     }
     .tijden{
         font-size: 10px;
+    }
+    .Tourjs{
+        width: 85vw;
+    }
+    .map{
+        width: 85vw;
     }
 }
