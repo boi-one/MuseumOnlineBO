@@ -228,6 +228,19 @@ a{
 .Tourjs{
     width: 40vw;
 }
+#container{
+    background-color: rgb(111, 184, 202);
+    width: 1000px;
+    height: 700px;
+    margin: 50px auto auto auto ;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px blue;
+}
+
+#myInteraction{
+    padding: 10px;
+}
 
 .map{
     width: 40vw;

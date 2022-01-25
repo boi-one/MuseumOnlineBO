@@ -2,8 +2,12 @@ const myImage = document.getElementById('myImage');
 const myImagePrev = document.getElementById('myImagePrev');
 const myImageNext = document.getElementById('myImageNext');
 
-const tentoonTitel = document.getElementById("tentoonTitel")
-const tentoonText = document.getElementById("tentoonText")
+const tentoonTitel = document.getElementById("tentoonTitel");
+const tentoonText = document.getElementById("tentoonText");
+
+const imyTitle = document.getElementById("imyTitle");
+const imyImage = document.getElementById("imyImage");
+const imyInput = document.getElementById("imyInput");
 
 var image = 0;
 var taal = "Nederlands";
@@ -170,4 +174,114 @@ function ChangeEN(){
     ContactInfo.innerHTML = "Phone number: 020 523 2222 <br> Email: info@hetscheepvaartmuseum.nl <br> Address: Kattenburgerplein 1 1018 KK Amsterdam";
     taal = "Engels";
     changeText();
+}
+
+// interactieve route
+
+let ingang =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/ingang/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/ingang/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/ingang/2.jpg"
+},
+{
+    "titel":"plaats 3",
+    "image":"interactieveroutefotos/ingang/3.jpg"
+},
+{
+    "titel":"plaats 4",
+    "image":"interactieveroutefotos/ingang/4.jpg"
+}]
+
+let kamer1 =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/kamer1/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/kamer1/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/kamer1/2.jpg"
+},
+{
+    "titel":"plaats 3",
+    "image":"interactieveroutefotos/kamer1/3.jpg"
+},
+{
+    "titel":"plaats 4",
+    "image":"interactieveroutefotos/kamer1/4.jpg"
+},
+{
+    "titel":"plaats 5",
+    "image":"interactieveroutefotos/kamer1/5.jpg"
+},
+{
+    "titel":"plaats 6",
+    "image":"interactieveroutefotos/kamer1/6.jpg"
+}]
+
+let kamer2 =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/kamer2/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/kamer2/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/kamer2/2.jpg"
+}]
+
+imyImage.src = "interactieveroutefotos/ingang/0.jpg";
+
+function show(index){
+    imyTitle.innerHTML =ingang[index].titel;
+    imyImage.src = ingang[index].image;
+}
+
+function getInput(){
+    show(imyInput.value);
+    //console.log(myInput.value)
+    imyInput.value = "";
+    imyInput.focus(); 
+}
+
+imyImage.src = "interactieveroutefotos/kamer1/0.jpg";
+
+function show(index){
+    imyTitle.innerHTML =kamer1[index].titel;
+    imyImage.src = kamer1[index].image;
+}
+
+function getInput(){
+    show(imyInput.value);
+    //console.log(myInput.value)
+    imyInput.value = "";
+    imyInput.focus(); 
+}
+
+imyImage.src = "interactieveroutefotos/kamer2/0.jpg";
+
+function show(index){
+    imyTitle.innerHTML =kamer2[index].titel;
+    imyImage.src = kamer2[kamer2].image;
+}
+
+function getInput(){
+    show(imyInput.value);
+    //console.log(myInput.value)
+    imyInput.value = "";
+    imyInput.focus(); 
 }
