@@ -244,44 +244,23 @@ let kamer2 =
     "image":"interactieveroutefotos/kamer2/2.jpg"
 }]
 
-imyImage.src = "interactieveroutefotos/ingang/0.jpg";
-
-function show(index){
+function showIngang(index){
     imyTitle.innerHTML =ingang[index].titel;
     imyImage.src = ingang[index].image;
 }
-
-function getInput(){
-    show(imyInput.value);
-    //console.log(myInput.value)
-    imyInput.value = "";
-    imyInput.focus(); 
-}
-
-imyImage.src = "interactieveroutefotos/kamer1/0.jpg";
 
 function show(index){
     imyTitle.innerHTML =kamer1[index].titel;
     imyImage.src = kamer1[index].image;
 }
 
-function getInput(){
-    show(imyInput.value);
-    //console.log(myInput.value)
-    imyInput.value = "";
-    imyInput.focus(); 
-}
-
-imyImage.src = "interactieveroutefotos/kamer2/0.jpg";
-
 function show(index){
     imyTitle.innerHTML =kamer2[index].titel;
-    imyImage.src = kamer2[kamer2].image;
+    imyImage.src = kamer2[index].image;
 }
 
 function getInput(){
-    show(imyInput.value);
-    //console.log(myInput.value)
+    showIngang(imyInput.value);
     imyInput.value = "";
     imyInput.focus(); 
 }
