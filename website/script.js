@@ -203,45 +203,59 @@ let ingang =
 let kamer1 =
 [{
     "titel":"plaats 0",
-    "image":"interactieveroutefotos/kamer1/0.jpg"
+    "image":"interactieveroutefotos/kamer0/0.jpg"
 },
 {
     "titel":"plaats 1",
-    "image":"interactieveroutefotos/kamer1/1.jpg"
+    "image":"interactieveroutefotos/kamer0/1.jpg"
 },
 {
     "titel":"plaats 2",
-    "image":"interactieveroutefotos/kamer1/2.jpg"
+    "image":"interactieveroutefotos/kamer0/2.jpg"
 },
 {
     "titel":"plaats 3",
-    "image":"interactieveroutefotos/kamer1/3.jpg"
+    "image":"interactieveroutefotos/kamer0/3.jpg"
 },
 {
     "titel":"plaats 4",
-    "image":"interactieveroutefotos/kamer1/4.jpg"
+    "image":"interactieveroutefotos/kamer0/4.jpg"
 },
 {
     "titel":"plaats 5",
-    "image":"interactieveroutefotos/kamer1/5.jpg"
+    "image":"interactieveroutefotos/kamer0/5.jpg"
 },
 {
     "titel":"plaats 6",
-    "image":"interactieveroutefotos/kamer1/6.jpg"
-}]
-
-let kamer2 =
-[{
-    "titel":"plaats 0",
-    "image":"interactieveroutefotos/kamer2/0.jpg"
+    "image":"interactieveroutefotos/kamer0/6.jpg"
 },
 {
-    "titel":"plaats 1",
-    "image":"interactieveroutefotos/kamer2/1.jpg"
+    "titel":"plaats 7",
+    "image":"interactieveroutefotos/kamer0/7.jpg"
 },
 {
-    "titel":"plaats 2",
-    "image":"interactieveroutefotos/kamer2/2.jpg"
+    "titel":"plaats 8",
+    "image":"interactieveroutefotos/kamer0/8.jpg"
+},
+{
+    "titel":"plaats 9",
+    "image":"interactieveroutefotos/kamer0/9.jpg"
+},
+{
+    "titel":"plaats 10",
+    "image":"interactieveroutefotos/kamer0/10.jpg"
+},
+{
+    "titel":"plaats 11",
+    "image":"interactieveroutefotos/kamer0/11.jpg"
+},
+{
+    "titel":"plaats 12",
+    "image":"interactieveroutefotos/kamer0/12.jpg"
+},
+{
+    "titel":"plaats 13",
+    "image":"interactieveroutefotos/kamer0/13.jpg"
 }]
 
 function showIngang(index){
@@ -249,7 +263,7 @@ function showIngang(index){
     imyImage.src = ingang[index].image;
 }
 
-function show(index){
+function showKamer1(index){
     imyTitle.innerHTML =kamer1[index].titel;
     imyImage.src = kamer1[index].image;
 }
@@ -260,7 +274,15 @@ function show(index){
 }
 
 function getInput(){
-    showIngang(imyInput.value);
+    if (imyInput.value < 5)
+    {
+        showIngang(imyInput.value);
+    }
+    else if (imyInput.value < 20)
+    {
+        showKamer1(imyInput.value - 5);
+    }
+    
     imyInput.value = "";
     imyInput.focus(); 
 }
