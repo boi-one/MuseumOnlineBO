@@ -257,6 +257,137 @@ let kamer1 =
     "titel":"plaats 13",
     "image":"interactieveroutefotos/kamer0/13.jpg"
 }]
+let kamer2 =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/kamer1/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/kamer1/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/kamer1/2.jpg"
+},
+{
+    "titel":"plaats 3",
+    "image":"interactieveroutefotos/kamer1/3.jpg"
+},
+{
+    "titel":"plaats 4",
+    "image":"interactieveroutefotos/kamer1/4.jpg"
+},
+{
+    "titel":"plaats 5",
+    "image":"interactieveroutefotos/kamer1/5.jpg"
+},
+{
+    "titel":"plaats 6",
+    "image":"interactieveroutefotos/kamer1/6.jpg"
+}]
+let kamer3 =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/kamer2/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/kamer2/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/kamer2/2.jpg"
+},
+{
+    "titel":"plaats 3",
+    "image":"interactieveroutefotos/kamer2/3.jpg"
+},
+{
+    "titel":"plaats 4",
+    "image":"interactieveroutefotos/kamer2/4.jpg"
+},
+{
+    "titel":"plaats 5",
+    "image":"interactieveroutefotos/kamer2/5.jpg"
+},
+{
+    "titel":"plaats 6",
+    "image":"interactieveroutefotos/kamer2/6.jpg"
+},
+{
+    "titel":"plaats 7",
+    "image":"interactieveroutefotos/kamer2/7.jpg"
+},
+{
+    "titel":"plaats 8",
+    "image":"interactieveroutefotos/kamer2/8.jpg"
+},
+{
+    "titel":"plaats 9",
+    "image":"interactieveroutefotos/kamer2/9.jpg"
+},
+{
+    "titel":"plaats 10",
+    "image":"interactieveroutefotos/kamer2/10.jpg"
+},
+{
+    "titel":"plaats 11",
+    "image":"interactieveroutefotos/kamer2/11.jpg"
+}]
+let kamer4 =
+[{
+    "titel":"plaats 0",
+    "image":"interactieveroutefotos/kamer3/0.jpg"
+},
+{
+    "titel":"plaats 1",
+    "image":"interactieveroutefotos/kamer3/1.jpg"
+},
+{
+    "titel":"plaats 2",
+    "image":"interactieveroutefotos/kamer3/2.jpg"
+},
+{
+    "titel":"plaats 3",
+    "image":"interactieveroutefotos/kamer3/3.jpg"
+},
+{
+    "titel":"plaats 4",
+    "image":"interactieveroutefotos/kamer3/4.jpg"
+},
+{
+    "titel":"plaats 5",
+    "image":"interactieveroutefotos/kamer3/5.jpg"
+},
+{
+    "titel":"plaats 6",
+    "image":"interactieveroutefotos/kamer3/6.jpg"
+},
+{
+    "titel":"plaats 7",
+    "image":"interactieveroutefotos/kamer3/7.jpg"
+},
+{
+    "titel":"plaats 8",
+    "image":"interactieveroutefotos/kamer3/8.jpg"
+},
+{
+    "titel":"plaats 9",
+    "image":"interactieveroutefotos/kamer3/9.jpg"
+},
+{
+    "titel":"plaats 10",
+    "image":"interactieveroutefotos/kamer3/10.jpg"
+},
+{
+    "titel":"plaats 11",
+    "image":"interactieveroutefotos/kamer3/11.jpg"
+},
+{
+    "titel":"plaats 12",
+    "image":"interactieveroutefotos/kamer3/12.jpg"
+}]
 
 function showIngang(index){
     imyTitle.innerHTML =ingang[index].titel;
@@ -267,20 +398,41 @@ function showKamer1(index){
     imyTitle.innerHTML =kamer1[index].titel;
     imyImage.src = kamer1[index].image;
 }
-
-function show(index){
+function showKamer2(index){
     imyTitle.innerHTML =kamer2[index].titel;
     imyImage.src = kamer2[index].image;
 }
+function showKamer3(index){
+    imyTitle.innerHTML =kamer3[index].titel;
+    imyImage.src = kamer3[index].image;
+}
+
+function showKamer4(index){
+    imyTitle.innerHTML =kamer4[index].titel;
+    imyImage.src = kamer4[index].image;
+}
+
 
 function getInput(){
     if (imyInput.value < 5)
     {
         showIngang(imyInput.value);
     }
-    else if (imyInput.value < 20)
+    else if (imyInput.value < 19)
     {
         showKamer1(imyInput.value - 5);
+    }
+    else if (imyInput.value < 26)
+    {
+        showKamer2(imyInput.value - 19);
+    }
+    else if (imyInput.value < 37)
+    {
+        showKamer3(imyInput.value - 26);
+    }
+    else if (imyInput.value < 49)
+    {
+        showKamer4(imyInput.value - 37);
     }
     
     imyInput.value = "";
